@@ -10,6 +10,12 @@ import Responsible from "./pages/Responsible";
 import Rules from "./pages/Rules";
 import Profile from "./pages/Profile";
 import Wallet from "./pages/Wallet";
+import GameHistory from "./pages/GameHistory";
+import TransactionHistory from "./pages/TransactionHistory";
+import ReferralHistory from "./pages/ReferralHistory";
+import PenaltyHistory from "./pages/PenaltyHistory";
+import Notification from "./pages/Notification";
+import Support from "./pages/Support";
 const App = () => {
   return (
     <div>
@@ -25,6 +31,17 @@ const App = () => {
         <Route exact path="/rules" element={<Rules />} />
         <Route exact path="/profile" element={<Profile />} />
         <Route exact path="/wallet" element={<Wallet />} />
+        <Route exact path="/game-history" element={<GameHistory />} />
+        <Route exact path="/referral-history" element={<ReferralHistory />} />
+
+        <Route exact path="/penalty-history" element={<PenaltyHistory />} />
+        <Route exact path="/notification" element={<Notification />} />
+        <Route exact path="/support" element={<Support />} />
+        <Route
+          exact
+          path="/transaction-history"
+          element={<TransactionHistory />}
+        />
       </Routes>
     </div>
   );
