@@ -45,24 +45,42 @@ const NavHeader = () => {
         <Link to="/profile">
           <NavCard icon={profile} text="my profile" />
         </Link>
-        <NavCard icon={cash} text="win cash" />
+        <Link to="/battle">
+          <NavCard icon={cash} text="win cash" />
+        </Link>
         <Link to="/wallet">
           <NavCard icon={wallet} text="my wallet" />
         </Link>
-        <NavCard icon={games} text="games history" />
-        <NavCard icon={transaction} text="transaction history" />
+        <Link to="/game-history">
+          <NavCard icon={games} text="games history" />
+        </Link>
+        <Link to="/transaction-history">
+          <NavCard icon={transaction} text="transaction history" />
+        </Link>
         <NavCard icon={refer} text="refer & earn" />
-        <NavCard icon={referral} text="referral history" />
-        <NavCard icon={penalty} text="penalty history" />
-        <NavCard icon={notification} text="notification" />
-        <NavCard icon={support} text="support" />
+        <Link to="/referral-history">
+          <NavCard icon={referral} text="referral history" />
+        </Link>
+        <Link to="/penalty-history">
+          {" "}
+          <NavCard icon={penalty} text="penalty history" />
+        </Link>
+        <Link to="/notification">
+          <NavCard icon={notification} text="notification" />
+        </Link>
+        <Link to="/support">
+          {" "}
+          <NavCard icon={support} text="support" />
+        </Link>
       </nav>
       <div className="cursor-pointer">
-        <img
-          src={navMoney}
-          alt="transation-menu"
-          className="w-[150px] max-md:w-[85px]"
-        />
+        <Link to="/wallet">
+          <img
+            src={navMoney}
+            alt="transation-menu"
+            className="w-[150px] max-md:w-[85px]"
+          />
+        </Link>
       </div>
     </header>
   );

@@ -8,7 +8,7 @@ const Refund = () => {
       <section className="section">
         <div className="flex gap-4 mt-24 max-md:mt-20 px-4 max-md:justify-center max-md:gap-2 max-md:items-end">
           <img src={refund} alt="refund-icon" />
-          <h2 className="text-[#1DC30F] md:text-xl ">Platform Commission</h2>
+          <h2 className="text-[#1DC30F] md:text-xl ">Refund Policy</h2>
         </div>
         <div>
           <p className="text-[#00CB76] text-sm p-4 md:text-lg leading-7 md:max-w-[70%]   mx-auto text-justify">

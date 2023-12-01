@@ -16,11 +16,15 @@ import ReferralHistory from "./pages/ReferralHistory";
 import PenaltyHistory from "./pages/PenaltyHistory";
 import Notification from "./pages/Notification";
 import Support from "./pages/Support";
+import Home from "./pages/Home.jsx";
+import Battle from "./pages/Battle.jsx";
 const App = () => {
   return (
     <div>
       <Routes>
         <Route exact path="/" element={<LoginPage />} />
+        <Route exact path="/home" element={<Home />} />
+        <Route exact path="/battle" element={<Battle />} />
         <Route exact path="/about" element={<About />} />
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/privacy" element={<PrivacyPolicy />} />

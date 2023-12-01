@@ -73,6 +73,12 @@ nav {
 main {
   width: 100%;
 }
+
+footer {
+  background-image: url("./assets/footer-bg.png");
+
+  background-size: cover;
+}
 @keyframes animate {
   from {
     transform: translateX(100%);
