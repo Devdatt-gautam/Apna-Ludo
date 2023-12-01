@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+@font-face {
+  font-family: "PoetsenOne";
+  src: url("../PoetsenOne-Regular.ttf");
+}
+body {
+  font-family: "PoetsenOne", "sans-serif";
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.text-shadow-black-lg {
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+}
+.text-shadow-black-sm {
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+nav {
+  animation: animate 750ms ease-in-out;
+}
+.section {
+  position: relative;
+  z-index: 1;
+}
+.main-bg {
+  background: url("./assets/contact-bg.svg") no-repeat center;
+  background-size: cover;
+}
+.rules-bg {
+  background: url("./assets/rules-bg.svg") no-repeat center;
+  background-size: cover;
+}
+.add-card {
+  background-image: linear-gradient(to right top, #e42c66, #f55b46),
+    url("./assets/card-add.svg");
+  background-blend-mode: color-burn;
+  background-size: cover;
+}
+.withdraw-card {
+  background-image: linear-gradient(to right top, #9c2cf3, #3a49f9),
+    url("./assets/card-add.svg");
+  background-blend-mode: color-burn;
+  background-size: cover;
+}
+main {
+  width: 100%;
+}
+@keyframes animate {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
